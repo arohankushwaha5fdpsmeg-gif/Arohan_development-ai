@@ -150,7 +150,6 @@ def execute_global_ai_generation(user_instruction, username_state):
             paywall_box = "<div style='background:#FEF2F2; padding:20px; border-radius:10px; text-align:center;'><h3>🛑 Quota Empty!</h3><p>Please upgrade your plan options package.</p></div>"
             return ("# ACCESS EXPIRED", "Account quota exhausted.", paywall_box, f"🔴 Limit Hit ({balance} remaining)")
 
-    # Lightweight Python structure builder optimized for low-compute tier processing
     simulated_output = (
         f"# Generated Code Matrix Framework\n"
         f"def arohan_process_engine():\n"
@@ -212,3 +211,4 @@ with gr.Blocks(title="Arohan Global Development Engine", head=meta_seo_headers, 
             
         paywall_output = gr.HTML()
 
+    reg_btn.click(register_public_account, inputs=[reg_user, reg_pass], outputs=[reg_output])
